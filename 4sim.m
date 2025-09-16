@@ -21,8 +21,7 @@ for i = 1:length(subject_ids)
     subj = subject_ids{i};
     fprintf('\nRunning simulation for subject %s...\n', subj);
     
-    % Path to this subject's CSV (directly inside optimization_<subj> folder)
-    csv_path = fullfile(opt_base, ['optimization_' subj], 'distributed.csv');
+    csv_path = fullfile(opt_base, ['4optimization_' subj], 'distributed.csv');
     
     if ~isfile(csv_path)
         warning('CSV not found for subject %s: %s', subj, csv_path);
@@ -45,7 +44,7 @@ for i = 1:length(subject_ids)
     end
     
     % Output path next to CSV
-    output_dir = fullfile(opt_base, ['optimization_' subj], 'simulation_output');
+    output_dir = fullfile(opt_base, ['4optimization_' subj], 'simulation_output');
     mkdir(output_dir);  % create folder if needed
     
     % Build SimNIBS session
