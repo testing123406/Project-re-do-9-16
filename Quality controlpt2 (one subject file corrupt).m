@@ -5,7 +5,7 @@ addpath('C:\Users\bostow26\SimNIBS-4.1\simnibs_env\Lib\site-packages\simnibs\mat
 savepath;
 
 % Set the subjects
-subjects = {'461743','481042','500222','519647','592455','635245','677766','723141','886674'};
+subjects = {'102715','103212','103414','106319','110613','114621','115219','118730','121618','123420','204319','204521','461743','481042','500222','519647','592455','635245','677766','723141','886674'};
 
 % Define the montages (electrode setups)
 montages = [ 
