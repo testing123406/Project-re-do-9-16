@@ -35,7 +35,8 @@ end
 % Run the simulation for each subject
 for i = 1:length(subjects)
     sub = subjects{i};
-    S.subpath = fullfile(['m2m_' sub]);  % head mesh
+  S.subpath = fullfile('D:\MATLAB\Meshes+Scripts', ['m2m_' sub]);
+
 
     % Iterate over different montages
     for j = 1:length(montages)
